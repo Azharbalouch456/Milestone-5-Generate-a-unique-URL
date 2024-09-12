@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Generator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Generator</h1>
+        <form id="resumeForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <button type="submit">Generate Resume</button>
+        </form>
+        
+        <div id="resumeDetails" class="hidden">
+            <p>Your resume is available at:</p>
+            <a id="resumeLink" href="#" target="_blank">username.vercel.app/resume</a>
+            <button id="downloadPDF">Download Resume as PDF</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script src="index.js"></script>
+</body>
+</html>
